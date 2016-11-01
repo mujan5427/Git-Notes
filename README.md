@@ -1,5 +1,5 @@
 
-# Git Note
+# Git Notes
 
 ### 1. Git Config
 
@@ -23,7 +23,7 @@ git config 設定檔的效果範圍，分為三種層級：系統、使用者、
 
 在指定 repo 中放入 .gitignore 檔案，可忽略指定的檔案
 
-完整的 .gitignore 語法可參考 [Git Ignore](http://git-scm.com/docs/gitignore)
+完整的 .gitignore 語法可參考 [官方 Git Ignore 文件](http://git-scm.com/docs/gitignore)
 
 <br />
 
