@@ -46,7 +46,7 @@ origin 是遠端儲存庫的預設名稱，如同 master 是本地儲存庫的�
   $ git init
   ```
 
-此時「MyRepo」裡面將新增一個「.git」資料夾
+  > 此時「MyRepo」裡面將新增一個「.git」資料夾
 
 3. 新增檔案「FirstFile.txt」
   ```bash
