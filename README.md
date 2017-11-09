@@ -19,30 +19,62 @@
  <br />
  <br />
 
-### 1. Git Config
+## Git Configuration
 
-git config 設定檔的效果範圍，分為三種層級：系統、使用者、儲存庫 *(預設)*
+<a name="configuration-architecture"></a>
+Configuration Architecture
 
-如果不同層級都設定相同的參數，較低層級會覆蓋較高層級的層級 `系統 >> 使用者 >> 儲存庫`
+ - The configuration options are stored in plain text files. The _git config_ command is just a convenient tool to edit these files without the hassle of remembering where they are stored and opening them in a text editor.
 
- - 系統：涵蓋全系統，會影響所有使用者及他們的儲存庫
-   - `git config --system`
-   - 設定檔路徑：/usr/local/git/etc/gitconfig (Mac OS)
- - 使用者：會影響該使用者的每個儲存庫
-   - `git config --global`
-   - 設定檔路徑：~/.gitconfig (Mac OS)
- - 儲存庫：只會影響目前的儲存庫
-   - `git config --local`
-   - 設定檔路徑：~/<儲存庫所在的資料夾>/.git/config (Mac OS)
+
+ **[⬆ back to top](#table-of-contents)**
+
+ <br />
+ <br />
+
+<a name="configuration-levels"></a>
+Configuration Levels
+
+ - In Git we have three configuration levels which are：
+  - System
+  - User
+  - Repository
+
+ - There are different configuration files for every different configuration level.
+
+ - You can basically set every parameter at every level according to your needs. If you set the same parameters at different levels, the lowest-level parameter hides the top level parameters.
+
+ `System > User > Repository`
+
+  - System：every user and its repository will be affected.
+    - `git config --system`
+    - configuration file path：/usr/local/git/etc/gitconfig (Mac OS)
+
+  - User：every user's repository will be affected.
+    - `git config --global`
+    - configuration file path：~/.gitconfig (Mac OS)
+
+  - Repository：only the repository in use will be affected.
+    - `git config --local`
+    - configuration file path：~/<儲存庫所在的資料夾>/.git/config (Mac OS)
+
+
+**[⬆ back to top](#table-of-contents)**
 
 <br />
+<br />
 
-### 2. .gitignore：忽略指定檔案的設定檔
+<a name="ignore-some-files-and-folders-by-default"></a>
+Ignoring some files and folders by default
 
-在指定 repo 中放入 .gitignore 檔案，可忽略指定的檔案
+ - We can create a _.gitignore_ file in the repository. Git will read it and then skip the  les and folders we listed inside it.
 
-完整的 .gitignore 語法可參考 [官方 Git Ignore 文件](http://git-scm.com/docs/gitignore)
+ > For the complete syntax of .gitignore see [Official Git Ignore Document](http://git-scm.com/docs/gitignore).
 
+
+**[⬆ back to top](#table-of-contents)**
+
+<br />
 <br />
 
 ### 3. 關於 origin
