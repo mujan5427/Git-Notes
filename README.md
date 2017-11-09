@@ -1,6 +1,24 @@
 
 # Git Notes
 
+## File Status Lifecycle
+
+![File Status Lifecycle](./assets/images/file-status-lifecycle.jpg)
+
+ - When you create or copy a new file in the working directory, the first state of the file is **untracked**.
+
+ - If you want to include the file in your repository, you have to add it using the _add_ command. Once it is added, the state of the file becomes **unmodified**.
+
+ - If you modify a file that is already added to the staging area, it changes its status to **modified**.
+
+ - The staging area is a virtual place that collects all the files you want to include in the next commit. All the files (new or modified) you want to include in the next commit have to be **staged** using the _git add_ command.
+
+
+ **[⬆ back to top](#table-of-contents)**
+
+ <br />
+ <br />
+
 ### 1. Git Config
 
 git config 設定檔的效果範圍，分為三種層級：系統、使用者、儲存庫 *(預設)*
@@ -87,18 +105,18 @@ origin 是遠端儲存庫的預設名稱，如同 master 是本地儲存庫的�
    ```bash
    $ git stash apply
    ```
-   
+
 2. 查看狀態：查看各檔案目前的狀態
    ```bash
    $ git status
    ```
-     
+
 3. 設定 Config 用戶資訊
    - 名稱：
    ```bash
    $ git config user.name 'Justin Ho'
    ```
-   
+
    - E-mail：
    ```bash
    $ git config user.email 'mujan5427@gmail.com'
@@ -109,42 +127,42 @@ origin 是遠端儲存庫的預設名稱，如同 master 是本地儲存庫的�
    ```bash
    $ git config <config level> alias.cm 'commit -m'
    ```
-   
+
    - 刪除：
    ```bash
    $ git config <config level> --unset alias.cm
    ```
-   
+
 5. 查看分支
    ```bash
    $ git branch
    ```
-   
+
 6. 建立新分支 *(想從哪個 branch 複製，就先切換到那)*
    ```bash
    $ git branch NewBranch
    ```
-   
+
 7. 切換分支
    ```bash
    $ git checkout NewBranch
    ```
-   
+
 8. 合併分支 *(目前在 master branch)*
    ```bash
    $ git merge NewBranch
    ```
-   
+
 9. 套用下載的異動資料
    ```bash
    $ git pull
    ```
-   
+
 10. 檢查檔案的異動內容
    ```bash
    $ git blame
    ```
-   
+
 11. 選用提交 (cherry picking)：選擇指定 commit，套用到自己目前的 branch
    ```bash
    $ git checkout 我是需要a1b2c3提交的一支分支
