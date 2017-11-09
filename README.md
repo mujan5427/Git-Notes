@@ -44,14 +44,16 @@ Configuration Levels
 
  - You can basically set every parameter at every level according to your needs. If you set the same parameters at different levels, the lowest-level parameter hides the top level parameters.
 
-  > System > User > Repository
+    > System > User > Repository
 
     - System：every user and its repository will be affected.
       - `git config --system`
       - configuration file path：/usr/local/git/etc/gitconfig (Mac OS)
+
     - User：every user's repository will be affected.
       - `git config --global`
       - configuration file path：~/.gitconfig (Mac OS)
+
     - Repository：only the repository in use will be affected.
       - `git config --local`
       - configuration file path：~/<儲存庫所在的資料夾>/.git/config (Mac OS)
