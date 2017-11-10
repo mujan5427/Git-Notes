@@ -104,6 +104,27 @@ Ignoring some files and folders by default
 <br />
 <br />
 
+## Branch
+
+ - A branch represents an independent line of development for your repository. Think of it as a brand-new working directory, staging area, and project history. Before you create any new branches, you automatically start out with the main branch (called master ).
+
+ > For a visual example, this diagram shows the master branch and the other branch with a bug fix update.
+
+ ![Create New Branch](./assets/images/git-branch-create.jpg)
+
+ - **Origin** is the default upstream repository. Most projects have at least one upstream project which they track. By default _origin_ is used for that purpose.
+
+ - **Master** is the default development branch. Whenever you create a Git repository, a branch named "master" is created, and becomes the active branch.
+
+ > This diagram shows what happens when your local repository has changes that the central repository does not have and you push those changes to it.
+
+ ![Merge Branch](./assets/images/git-branch-merge.jpg)
+
+**[⬆ back to top](#table-of-contents)**
+
+<br />
+<br />
+
 ### 3. 關於 origin
 
 origin 是遠端儲存庫的預設名稱，如同 master 是本地儲存庫的預設名稱，一樣
