@@ -125,12 +125,6 @@ Ignoring some files and folders by default
 <br />
 <br />
 
-### 3. 關於 origin
-
-origin 是遠端儲存庫的預設名稱，如同 master 是本地儲存庫的預設名稱，一樣
-
-<br />
-
 ### 4. 本地目錄上傳至遠端
 
 1. 建立一個空資料夾「MyRepo」，並進入它
