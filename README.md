@@ -1,6 +1,33 @@
 
 # Git Notes
 
+## Repository and Working Directory
+
+<a name="repository"></a>
+Repository
+
+ - A repository contains all the files for your project.
+
+ - You may noticed that there is a _.git_ directory in the repository. Let's call it the git directory. In the git directory there are files and folders that compose our repository. Thanks to this, we can track the file status, configure the repository, and so on.
+
+ - To be able to collaborate on any Git project, you need to know how to manage your remote repositories. Remote repositories are versions of your project that are hosted on the Internet or network somewhere.
+
+
+**[⬆ back to top](#table-of-contents)**
+
+<br />
+<br />
+
+Working Directory
+
+ - A folder that contains an initialized Git repository is a working directory.
+
+
+**[⬆ back to top](#table-of-contents)**
+
+<br />
+<br />
+
 ## File Status Lifecycle
 
 ![File Status Lifecycle](./assets/images/file-status-lifecycle.jpg)
