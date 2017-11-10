@@ -120,6 +120,12 @@ Ignoring some files and folders by default
 
  ![Merge Branch](./assets/images/git-branch-merge.jpg)
 
+ - When you want to share a branch with the world, you need to push it up to a remote that you have write access to. **_Your local branches aren’t automatically synchronized to the remotes_** you write to you have to explicitly push the branches you want to share.
+
+ > That way, you can use private branches for work you don’t want to share, and push up only the topic branches you want to collaborate on.
+
+ - Checking out a local branch from a remote-tracking branch automatically creates what is called a **"tracking branch"**. Tracking branches are local branches that have a direct relationship to a remote branch. If you’re on a tracking branch and type _git pull_, Git automatically knows which server to fetch from and branch to merge into.
+
 **[⬆ back to top](#table-of-contents)**
 
 <br />
