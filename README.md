@@ -251,6 +251,155 @@ Ignoring some files and folders by default
 
 <br />
 
+## Common Commands
+
+ - Create an empty Git repository or reinitialize an existing one.
+
+   ```bash
+   git init
+   ```
+
+ - Download a branch from a remote repository, then immediately merges it into the current branch.
+
+ ```bash
+ git pull
+ ```
+
+ > Incorporates changes from a remote repository into the current branch. In its default mode, _git pull_ is shorthand for _git fetch_ followed by _git merge FETCH_\__HEAD_.
+
+ - Upload local work to a configured remote location.
+
+ ```bash
+ git push
+ ```
+
+ > When you give the _git push_ command without specifying anything else, Git sends to the remote all the new commits you did locally in your actual branch. For new commits, we will send only the local commits that have not been uploaded yet.
+
+ - Push the specified branch to _&lt;remote repository name&gt;_, along with all of the necessary commits and internal objects. This creates a local branch in the destination repository.
+
+ ```bash
+ git push <remote repository name> <branch name>
+ ```
+
+ - Using the _-u_ option, we told Git to track the remote branch. Tracking a remote branch is the way to tie your local branch with the remote one. When a local branch tracks a remote branch, you actually have a local and remote branch that can be kept easily in sync.
+
+ ```bash
+ git push -u <remote repository name> <branch name>
+ ```
+
+ > Note that this behavior is not automatic; you have to set it if you want it.
+
+ - Moves changes from the working directory to the staging area.
+
+ > This command can be performed multiple times before a commit.
+
+ ```bash
+ git add <file> || <directory>
+ ```
+
+ - Takes the staged snapshot with commit message and commits it to the project history.
+
+ ```bash
+ git commit -m '<commit message>'
+ ```
+
+ - Displays the state of the working directory and the staged snapshot.
+
+ ```bash
+ git status
+ ```
+
+ - List all of the branches in your repository.
+
+ ```bash
+ git branch
+ ```
+
+ - Create a new branch called _&lt;branch name&gt;_. This does not check out the new branch.
+
+ ```bash
+ git branch <branch name>
+ ```
+
+ - Rename the current branch to _&lt;branch name&gt;_.
+
+ ```bash
+ git branch -m <branch name>
+ ```
+
+ - Delete the specified branch. This is a **"safe"** operation in that Git prevents you from deleting the branch if it has unmerged changes.
+
+ ```bash
+ git branch -d <branch name>
+ ```
+
+ - Force delete the specified branch, even if it has unmerged changes.
+
+ ```bash
+ git branch -D <branch name>
+ ```
+
+ - Check out the specified branch, which should have already been created.
+
+ ```bash
+ git checkout <branch name>
+ ```
+
+ - Create and check out _&lt;branch name&gt;_. The _-b_ option is a convenience flag that tells Git to run _git branch &lt;branch name&gt;_ before running _git checkout &lt;branch name&gt;_.
+
+ ```bash
+ git checkout -b <branch name>
+ ```
+
+ - Merge the specified branch into the current branch.
+
+ ```bash
+ git merge <branch name>
+ ```
+
+ - Stashing takes your **_uncommitted changes_** (both staged and unstaged), saves them away for later use, and then reverts them from your working copy.
+
+ ```bash
+ git stash
+ ```
+
+ > At this point you're free to make changes, create new commits, switch branches, and perform any other Git operations; then come back and re-apply your stash when you're ready.
+
+ > Note that the stash is local to your Git repository; stashes are not transferred to the server when you push.
+
+ > By default Git won't stash changes made to untracked or ignored files.
+
+ - Popping your stash removes the changes from your stash and reapplies them to your working copy.
+
+ ```bash
+ git stash pop
+ ```
+
+ - List the remote connections you have to other repositories.
+
+ ```bash
+ git remote
+ ```
+
+ - Create a new connection to a remote repository.
+
+ ```bash
+ git remote add <remote repository name> <remote repository url>
+ ```
+
+ > When you clone a repository with _git clone_, it automatically creates a remote connection called origin pointing back to the cloned repository.
+
+ - Remove the connection to the remote repository.
+
+ ```bash
+ git remote rm <remote repository name>
+ ```
+
+**[⬆ back to top](#table-of-contents)**
+
+<br />
+<br />
+
 ### Reference Information
 
 Git Essentials (Author：Ferdinando Santacroce)
