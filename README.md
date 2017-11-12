@@ -183,6 +183,28 @@ Ignoring some files and folders by default
    git commit -m '<commit message>'
    ```
 
+ - Remove the specified file from the staging area, but leave the working directory unchanged. This unstages a file without overwriting any changes.
+
+   ```bash
+   git reset <specified file name>
+   ```
+
+   > This unstages _a_ file without overwriting any changes.
+
+ - Reset the staging area to match the most recent commit, but leave the working directory unchanged.
+
+   ```bash
+   git reset
+   ```
+
+   > This unstages _all_ files without overwriting any changes
+
+ - Reset the staging area and the working directory to match the most recent commit. In addition to unstaging changes, the _--hard_ flag tells Git to overwrite all changes in the working directory, too.
+
+   ```bash
+   git reset --hard
+   ```
+
  - Displays the state of the working directory and the staged snapshot.
 
    ```bash
