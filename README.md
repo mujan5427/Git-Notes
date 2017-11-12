@@ -183,7 +183,7 @@ Ignoring some files and folders by default
    git commit -m '<commit message>'
    ```
 
- - Remove the specified file from the staging area, but leave the working directory unchanged. This unstages a file without overwriting any changes.
+ - Remove the specified file from the staging area, but leave the working directory unchanged.
 
    ```bash
    git reset <specified file name>
