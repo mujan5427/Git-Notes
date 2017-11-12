@@ -302,8 +302,12 @@ Ignoring some files and folders by default
 <br />
 <br />
 
-### Reference Information
+## Reference Information
 
-Git Essentials (Author：Ferdinando Santacroce)
+Git Essentials, Traditional Chinese (Author：Ferdinando Santacroce)
+
+Getting Git Right (Website：[atlassian/git](https://www.atlassian.com/git))
+
+Git Official Document (Website：[git official document](https://git-scm.com/docs))
 
 <br />
