@@ -112,7 +112,7 @@ Configuration Levels
 <br />
 <br />
 
-<a name="ignore-some-files-and-folders-by-default"></a>
+<a name="ignoring-some-files-and-folders-by-default"></a>
 Ignoring some files and folders by default
 
  - We can create a _.gitignore_ file in the repository. Git will read it and then skip the  les and folders we listed inside it.
