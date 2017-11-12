@@ -38,6 +38,7 @@ Repository
 <br />
 <br />
 
+<a name="working-directory"></a>
 Working Directory
 
  - A folder that contains an initialized Git repository is a working directory.
