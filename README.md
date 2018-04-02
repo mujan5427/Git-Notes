@@ -339,4 +339,6 @@ Getting Git Right (Website：[atlassian/git](https://www.atlassian.com/git))
 
 Git Official Document (Website：[git official document](https://git-scm.com/docs))
 
+cmatskas.com (Website：[Delete Git branch locally and remotely](https://cmatskas.com/delete-git-branch-locally-and-remotely/))
+
 <br />
