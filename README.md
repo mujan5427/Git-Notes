@@ -160,6 +160,14 @@ Ignoring some files and folders by default
    git init
    ```
 
+ - Before fetching, remove any remote-tracking references that no longer exist on the remote.
+
+   ```bash
+   git fetch <remote repository name> --prune
+   ```
+
+   > Delete multiple obsolete tracking branches.
+
  - Download a branch from a remote repository, then immediately merges it into the current branch.
 
    ```bash
